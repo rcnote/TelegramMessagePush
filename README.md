@@ -73,9 +73,10 @@
 1. 确保所有依赖都已正确安装
 2. 在项目根目录下运行打包命令：
    ```bash
-   pyinstaller --noconsole --icon=logo.ico --add-data "logo.png;." main.py
+   pyinstaller --onefile --noconsole --icon=logo.ico --add-data "logo.png;." main.py
    ```
    参数说明：
+   - `--onefile`: 生成单个可执行文件
    - `--noconsole`: 不显示控制台窗口
    - `--icon`: 设置应用图标
    - `--add-data`: 添加额外资源文件
